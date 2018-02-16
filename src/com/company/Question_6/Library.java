@@ -7,14 +7,13 @@ import java.util.List;
 public class Library {
 
     private List<Game> gameLibrary = new ArrayList<Game>();
-    private Menu menu;
+    private Menu menu = new Menu();
 
 
 
     protected void addGame(Game game) {
         //Code goes here to add game to where ever we are saving game things to
         gameLibrary.add(game);
-        Menu menu = new Menu();
         menu.startMenu();
     }
 
@@ -27,7 +26,6 @@ public class Library {
             gameLibrary.remove(gameIndex);
             System.out.println("This game has been removed from your library.");
         }
-        Menu menu = new Menu();
         menu.startMenu();
     }
 
@@ -43,7 +41,6 @@ public class Library {
             }
         }
         System.out.println("\n");
-        Menu menu = new Menu();
         menu.startMenu();
     }
 }

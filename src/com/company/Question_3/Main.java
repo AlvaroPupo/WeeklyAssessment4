@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         /*
-        The Arraylist in this class is populated with Car objects.
+        The displayList in this class is populated with Car objects.
         1. Create a method in this class that will list all of the models of the cars in the list.
          */
 
@@ -25,6 +25,15 @@ public class Main {
         carsList.add(new Car("Honda", "Civic", "Black"));
         carsList.add(new Car("Honda", "Insight", "Blue"));
         carsList.add(new Car("Tesla", "Model 3", "Grey"));
+        displayCarList();
+    }
+    private void displayCarList(){
+
+        carsList.get(0);
+        carsList.get(1);
+        carsList.get(2);
+        carsList.get(3);
+
     }
 
 
