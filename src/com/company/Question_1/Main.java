@@ -14,9 +14,31 @@ public class Main extends displayList {
         3. Create a new method in this class called displayArray.
         4. Have this new method use a ForEach loop to iterate through the ArrayList and display each item to the user.
          */
-         addToarrayList();
-         displayArray();
+         Main main = new Main();
+         main.displayArray();
 
 
     }
+//    Main main = new Main();
+//        main.addToArrayList();
+//
+//}
+//
+//    private void addToArrayList() {
+//        myArrayList.add("something");
+//        myArrayList.add("something 2");
+//        myArrayList.add("something 3");
+//        myArrayList.add("something 4");
+//        myArrayList.add("something 5");
+//        myArrayList.add("something 6");
+//
+//        displayArray();
+//    }
+//
+//    private void displayArray() {
+//
+//        for (String item: myArrayList) {
+//            System.out.println(item);
+//        }
+//    }
 }

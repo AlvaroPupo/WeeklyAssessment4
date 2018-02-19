@@ -7,16 +7,17 @@ import java.util.List;
 public class Library {
 
     private List<Game> gameLibrary = new ArrayList<Game>();
-    private Menu menu = new Menu();
+    private final Menu menu;
 
-
+    public Library(Menu menu) {
+        this.menu = menu;
+    }
 
     protected void addGame(Game game) {
         //Code goes here to add game to where ever we are saving game things to
         gameLibrary.add(game);
         menu.startMenu();
     }
-
 
     protected void removeGame(int gameIndex) {
         if (gameLibrary.isEmpty()) {

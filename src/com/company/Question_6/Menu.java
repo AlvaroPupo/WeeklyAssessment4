@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Menu {
 
     private Scanner input = new Scanner(System.in);
-    private Library library = new Library();
+    private Library library = new Library(this);
 
     protected void startMenu() {
 
@@ -32,6 +32,7 @@ public class Menu {
                     input.nextLine();
                     System.out.println("You have chosen to remove a game from your library. \n" +
                             "Here is a list of games, type the number of the one you would like to remove.");
+                    input.nextLine();
                     //Create method to list all game available in the library that can be removed
                     library.listGames();
                     library.removeGame(input.nextInt());

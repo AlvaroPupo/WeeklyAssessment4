@@ -1,5 +1,8 @@
 package com.company.Question_6;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     /*
@@ -7,6 +10,8 @@ public class Main {
     that is created when we run our program.
     1. Fix the code in this package to make sure there is only 1 instance of the library that is ever created.
      */
+
+    private List<String> myArrayList = new ArrayList<>();
 
     public static void main(String[] args) {
 
